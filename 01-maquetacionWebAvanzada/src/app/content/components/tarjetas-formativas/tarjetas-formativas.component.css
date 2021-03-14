@@ -1,0 +1,41 @@
+
+
+.card {
+    float: left;
+    width: 206px;
+    height: 305px;
+    border:  1px solid #CCC;
+    box-shadow: 1px 1px 2px #DDD;
+    background: white;
+    overflow: hidden;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.icon {
+    display: block;
+    width: 100%;
+    height: 130px;
+    font-family: "WebSymbolsRegular";
+    font-size: 50px;
+    line-height: 110px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.category {
+    width: 100%;
+    height: 50px;
+    font-family: "TrebuchetMS";
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    color: #00538C;
+}
+
+.description {
+    font-family: "TrebuchetMS";
+    font-size: 15px;
+    text-align: center;
+    color: #00538C;
+}

@@ -1,0 +1,16 @@
+
+<section id="info">
+
+    <div id="banner">
+        <h1>CURSOS DE FORMACIÓN</h1>
+    </div>
+
+    <div id="cards">
+        <app-tarjetas-formativas
+            id="card2"
+            *ngFor="let tarjeta of tarjetas"
+            [tarjeta]=tarjeta>
+        </app-tarjetas-formativas>
+    </div>
+
+</section>
