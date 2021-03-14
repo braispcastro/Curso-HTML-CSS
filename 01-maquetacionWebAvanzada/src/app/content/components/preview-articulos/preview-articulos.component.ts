@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-preview-articulos',
@@ -6,6 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./preview-articulos.component.css']
 })
 export class PreviewArticulosComponent implements OnInit {
+
+  @Input()
+  articulo = {
+    fecha: '',
+    categoria: '',
+    titulo: ''
+  }
 
   constructor() { }
 

@@ -35,6 +35,34 @@ export class InicioComponent implements OnInit {
     }
   ];
 
+  articulos = [
+    {
+      fecha: '12 dic',
+      categoria: 'Pruebas',
+      titulo: 'Título de prueba'
+    },
+    {
+      fecha: '13 dic',
+      categoria: 'Pruebas',
+      titulo: 'Título de prueba'
+    },
+    {
+      fecha: '14 dic',
+      categoria: 'Pruebas',
+      titulo: 'Título de prueba'
+    },
+    {
+      fecha: '15 dic',
+      categoria: 'Pruebas',
+      titulo: 'Título de prueba'
+    },
+    {
+      fecha: '16 dic',
+      categoria: 'Pruebas',
+      titulo: 'Título de prueba'
+    }
+  ];
+
   constructor() { }
 
   ngOnInit(): void {

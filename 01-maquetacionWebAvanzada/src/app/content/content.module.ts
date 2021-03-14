@@ -6,6 +6,8 @@ import { FormacionComponent } from './pages/formacion/formacion.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { TarjetasFormativasComponent } from './components/tarjetas-formativas/tarjetas-formativas.component';
 import { PreviewArticulosComponent } from './components/preview-articulos/preview-articulos.component';
+import { SidebarComponent } from '../shared/sidebar/sidebar.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -19,7 +21,8 @@ import { PreviewArticulosComponent } from './components/preview-articulos/previe
     PreviewArticulosComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule
   ],
   exports: [
     InicioComponent,

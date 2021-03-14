@@ -2,16 +2,33 @@
 <div id="header">
 
     <div id="logo">
-        <span class="gear">S</span>
+        <span class="icon">S</span>
         <h3>BLOG</h3>
     </div>
     
     <nav id="menu">
         <ul>
-            <li><a href="#">INICIO</a></li>
-            <li><a href="#">BLOG</a></li>
-            <li><a href="#">FORMACIÓN</a></li>
-            <li><a href="#">CONTACTO</a></li>
+            <li
+                routerLink=""
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{ exact: true }">
+                INICIO
+            </li>
+            <li
+                routerLink="formacion"
+                routerLinkActive="active">
+                FORMACIÓN
+            </li>
+            <li
+                routerLink="contacto"
+                routerLinkActive="active">
+                CONTACTO
+            </li>
+            <li
+                routerLink="blog"
+                routerLinkActive="active">
+                BLOG
+            </li>
         </ul>
     </nav>
     

@@ -31,6 +31,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    outline: none;
 }
 
 body {
@@ -40,4 +41,8 @@ body {
 .wrap {
     width: 1200px;
     margin: 0px auto;
+}
+
+.icon {
+    font-family: "WebSymbolsRegular";
 }
