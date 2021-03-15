@@ -10,9 +10,14 @@
     overflow: hidden;
     margin: 20px;
     cursor: pointer;
+    transition: all 300ms;
 }
 
-.icon {
+.card:hover {
+    background: black;
+}
+
+.card .icon {
     display: block;
     width: 100%;
     height: 130px;
@@ -21,9 +26,25 @@
     line-height: 110px;
     text-align: center;
     margin: 0px auto;
+    transition: all 300ms;
 }
 
-.category {
+.card:hover .icon {
+    font-size: 70px;
+    color: #37BCF9;
+    animation: showIcon 300ms linear;
+}
+
+@keyframes showIcon {
+    from {
+        transform: translateY(-200%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+.card .category {
     width: 100%;
     height: 50px;
     font-family: "TrebuchetMS";
@@ -31,11 +52,44 @@
     font-weight: bold;
     text-align: center;
     color: #00538C;
+    transition: all 300ms;
 }
 
-.description {
+.card:hover .category {
+    color: white;
+    animation: showCategory 400ms linear;
+}
+
+@keyframes showCategory {
+    from {
+        transform: translateX(300%);
+        color: black;
+    }
+    to {
+        transform: translateX(0%);
+        color: white;
+    }
+}
+
+.card .description {
     font-family: "TrebuchetMS";
     font-size: 15px;
     text-align: center;
     color: #00538C;
+}
+
+.card:hover .description {
+    color: white;
+    animation: showDescription 400ms linear;
+}
+
+@keyframes showDescription {
+    from {
+        transform: translateX(-300%);
+        color: black;
+    }
+    to {
+        transform: translateX(0%);
+        color: white;
+    }
 }

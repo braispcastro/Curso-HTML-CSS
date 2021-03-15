@@ -18,7 +18,41 @@
     letter-spacing: 1px;
     cursor: pointer;
     overflow: hidden;
-    transition: all 300ms;
+}
+
+#logo:hover {
+    border-radius: 2px;
+    color: black;
+    background-color: #CCC;
+}
+
+#logo:hover .icon {
+    animation: fromBelow 500ms linear;
+}
+
+@keyframes fromBelow {
+    0% {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(200%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+#logo:hover h3 {
+    animation: fromRight 300ms linear;
+}
+
+@keyframes fromRight {
+    from {
+        transform: translateX(200%);
+    }
+    to {
+        transform: translateX(0%);
+    }
 }
 
 #logo .icon {
@@ -27,6 +61,19 @@
     font-size: 30px;
     margin-top: 8px;
     margin-left: 26px;
+    animation-name: rotate-gear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate-gear {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
 }
 
 #logo h3 {
@@ -35,7 +82,6 @@
     margin-right: 65px;
     font-size: 40px;
     margin-top: 5px;
-    transition: all 300ms;
 }
 
 #menu {
