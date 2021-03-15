@@ -39,27 +39,27 @@ export class InicioComponent implements OnInit {
     {
       fecha: '12 dic',
       categoria: 'Pruebas',
-      titulo: 'Título de prueba'
+      titulo: 'Título del articulo'
     },
     {
       fecha: '13 dic',
       categoria: 'Pruebas',
-      titulo: 'Título de prueba'
+      titulo: 'Título del articulo'
     },
     {
       fecha: '14 dic',
       categoria: 'Pruebas',
-      titulo: 'Título de prueba'
+      titulo: 'Título del articulo'
     },
     {
       fecha: '15 dic',
       categoria: 'Pruebas',
-      titulo: 'Título de prueba'
+      titulo: 'Título del articulo'
     },
     {
       fecha: '16 dic',
       categoria: 'Pruebas',
-      titulo: 'Título de prueba'
+      titulo: 'Título del articulo'
     }
   ];
 

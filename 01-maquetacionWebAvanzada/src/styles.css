@@ -31,6 +31,9 @@
 * {
     margin: 0px;
     padding: 0px;
+}
+
+*:focus {
     outline: none;
 }
 
@@ -45,4 +48,13 @@ body {
 
 .icon {
     font-family: "WebSymbolsRegular";
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+#content {
+    margin-top: 20px;
 }

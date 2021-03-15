@@ -1,31 +1,31 @@
+<section id="content">
 
-<section id="info">
+    <div class="wrap">
 
-    <div id="banner">
-        <h1>CURSOS DE FORMACIÓN</h1>
+        <div id="banner">
+            <h1>CURSOS DE FORMACIÓN</h1>
+        </div>
+
+        <div id="cards">
+            <app-tarjetas-formativas *ngFor="let tarjeta of tarjetas" [tarjeta]=tarjeta>
+            </app-tarjetas-formativas>
+        </div>
+
+        <aside id="lateral">
+            <app-sidebar></app-sidebar>
+        </aside>
+
+        <section id="articles">
+            <h2>Último artículos</h2>
+            <div class="clearfix"></div>
+            <app-preview-articulos *ngFor="let articulo of articulos" [articulo]=articulo>
+            </app-preview-articulos>
+
+            <article id="blog">
+                <a href="#">Ir al blog</a>
+            </article>
+        </section>
+
     </div>
-
-    <div id="cards">
-        <app-tarjetas-formativas
-            *ngFor="let tarjeta of tarjetas"
-            [tarjeta]=tarjeta>
-        </app-tarjetas-formativas>
-    </div>
-
-    <aside id="lateral">
-        <app-sidebar></app-sidebar>
-    </aside>
-
-    <section id="articles">
-        <h2>Último artículos</h2>
-        <app-preview-articulos
-            *ngFor="let articulo of articulos"
-            [articulo]=articulo>
-        </app-preview-articulos>
-
-        <article id="blog">
-            <a href="#">Ir al blog</a>
-        </article>
-    </section>
 
 </section>

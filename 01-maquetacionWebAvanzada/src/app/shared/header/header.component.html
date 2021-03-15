@@ -1,35 +1,29 @@
-
 <div id="header">
 
-    <div id="logo">
-        <span class="icon">S</span>
-        <h3>BLOG</h3>
+    <div class="wrap">
+
+        <div id="logo">
+            <span class="icon">S</span>
+            <h3>BLOG</h3>
+        </div>
+
+        <nav id="menu">
+            <ul>
+                <li routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                    INICIO
+                </li>
+                <li routerLink="formacion" routerLinkActive="active">
+                    FORMACIÓN
+                </li>
+                <li routerLink="contacto" routerLinkActive="active">
+                    CONTACTO
+                </li>
+                <li routerLink="blog" routerLinkActive="active">
+                    BLOG
+                </li>
+            </ul>
+        </nav>
+
     </div>
-    
-    <nav id="menu">
-        <ul>
-            <li
-                routerLink=""
-                routerLinkActive="active"
-                [routerLinkActiveOptions]="{ exact: true }">
-                INICIO
-            </li>
-            <li
-                routerLink="formacion"
-                routerLinkActive="active">
-                FORMACIÓN
-            </li>
-            <li
-                routerLink="contacto"
-                routerLinkActive="active">
-                CONTACTO
-            </li>
-            <li
-                routerLink="blog"
-                routerLinkActive="active">
-                BLOG
-            </li>
-        </ul>
-    </nav>
     
 </div>
