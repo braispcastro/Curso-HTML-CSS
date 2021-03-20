@@ -1,0 +1,26 @@
+// * {
+//     text-decoration: none;
+//     margin: 0px;
+//     padding: 0px;
+//     font-family: sans-serif;
+//     outline: none;
+// }
+
+$footer-height: 120px;
+
+#footer-container {
+    display: flex;
+    justify-content: center;
+    height: $footer-height;
+    background-color: #222;
+    color: white;
+}
+
+#footer {
+    height: $footer-height;
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}

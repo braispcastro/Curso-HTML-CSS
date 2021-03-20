@@ -1,0 +1,113 @@
+// * {
+//     text-decoration: none;
+//     margin: 0px;
+//     padding: 0px;
+//     font-family: sans-serif;
+//     outline: none;
+// }
+
+$header-height: 60px;
+
+#header-container {
+    display: flex;
+    justify-content: center;
+    height: $header-height;
+    background-color: #222;
+    color: white;
+}
+
+#header {
+    height: $header-height;
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#logo {
+    flex-grow: 1;
+    flex-basis: 20%;
+    color: white;
+
+    h1 {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 6px;
+        color: cadetblue;
+        font-size: 40px;
+        font-weight: normal;
+        padding-left: 12px;
+        letter-spacing: 1px;
+    }
+}
+
+#menu {
+    flex-grow: 1;
+    flex-basis: 70%;
+    height: 100%;
+
+    ul {
+        display: flex;
+        flex-flow: row wrap;
+        list-style: none;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+
+        li span {
+            color: white;
+            font-size: 18px;
+            font-weight: normal;
+            letter-spacing: 1px;
+            padding-left: 12px;
+            padding-right: 12px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            margin-left: 15px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 300ms;
+        }
+
+        li span:hover {
+            background-color: #EEE;
+            color: #222;
+        }
+    }
+}
+
+@media (max-width: 760px) {
+
+    #header-container {
+        height: $header-height - 10px;
+    }
+
+    #header {
+        height: $header-height - 10px;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    #menu {
+        flex-grow: 1;
+        flex-basis: 100%;
+
+        ul {
+            justify-content: center;
+            padding: 0px;
+
+            li span {
+                text-transform: uppercase;
+                font-size: 13px;
+                margin-left: 5px;
+            }
+
+            li:first-child span {
+                margin-left: 0px;
+            }
+        }
+    }
+}

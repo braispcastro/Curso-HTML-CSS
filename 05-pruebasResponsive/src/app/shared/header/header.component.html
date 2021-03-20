@@ -1,24 +1,37 @@
-<div id="header">
+<div id="header-container">
 
-    <div id="logo">
-        <p>Website</p>
-    </div>
+    <header id="header">
 
-    <nav id="nav">
-        <ul>
-            <li>
-                <span>Inicio</span>
-            </li>
-            <li>
-                <span>Proyectos</span>
-            </li>
-            <li>
-                <span>Astrofotografía</span>
-            </li>
-            <li>
-                <span>Contacto</span>
-            </li>
-        </ul>
-    </nav>
+        <div id="logo">
+            <h1>{{ logo }}</h1>
+        </div>
+    
+        <nav id="menu">
+            <ul>
+                <li
+                    routerLink=""
+                    routerLinkActive="active"
+                    [routerLinkActiveOptions]="{ exact: true }">
+                    <span>Inicio</span>
+                </li>
+                <li
+                    routerLink="proyectos"
+                    routerLinkActive="active">
+                    <span>Proyectos</span>
+                </li>
+                <li
+                    routerLink="astrofotografia"
+                    routerLinkActive="active">
+                    <span>Astrofotografía</span>
+                </li>
+                <li
+                    routerLink="contacto"
+                    routerLinkActive="active">
+                    <span>Contacto</span>
+                </li>
+            </ul>
+        </nav>
+        
+    </header>
 
 </div>
